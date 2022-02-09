@@ -1,0 +1,5 @@
+spacy
+langdetect
+unidecode
+treetaggerwrapper
+yattag

@@ -1,26 +1,4 @@
-# deepPavlov-NER
-Python deepPavlov for NER (easy to get the entities spans and viz...)
-
-
-Run the scripts in a virtual environment
-
-### deepPavlov's installation
-
-See http://docs.deeppavlov.ai/en/master/intro/installation.html for deepPavlov's intallation
-(don't forget to upgrade pip in the virtual environment!)
-
-### Install deepPavlov's models
-`python -m deeppavlov install ner_ontonotes_bert_torch`
-`python -m deeppavlov install squad_bert`
-`python install.py`
-
-### Install requirements
-`python -m pip install -r requirements.txt`
-download spacy model:
-`python -m spacy download xx_ent_wiki_sm`
-
-# Demo
-```
+#!/usr/bin/env python3.6
 import sys
 
 sys.path.insert(0, "src")
@@ -57,6 +35,3 @@ with Serializer(text, entities) as s:
     s.to_tsv("entities.tsv")
     s.to_html("entities.html")
     s.to_json("entities.json")
-
-
-```
