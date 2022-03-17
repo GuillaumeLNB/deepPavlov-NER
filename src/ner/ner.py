@@ -8,7 +8,7 @@ import os
 import re
 import sys
 
-assert sys.version_info[:2] == (3, 6), "works only on python3.6"
+# assert sys.version_info[:2] == (3, 6), "works only on python3.6"
 
 import spacy
 from deeppavlov import configs, build_model
