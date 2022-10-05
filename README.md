@@ -1,6 +1,6 @@
 # deepPavlov-NER
-Python deepPavlov wrapper for NER.
-Able to get Named Entities using BERT language models in 100+ languages as well as 17 different types of named entities (CARDINAL, DATE, EVENT, FAC, GPE, LANGUAGE, LAW, LOC, MONEY, NORP, ORDINAL, ORG, PERSON, PRODUCT, QUANTITY, TIME, WORK_OF_ART)
+Python **deepPavlov** wrapper for **NER**.
+Able to get **Named Entities** using **BERT** language models in 100+ languages as well as 17 different types of named entities (CARDINAL, DATE, EVENT, FAC, GPE, LANGUAGE, LAW, LOC, MONEY, NORP, ORDINAL, ORG, PERSON, PRODUCT, QUANTITY, TIME, WORK_OF_ART)
 
 # Examples
 
@@ -22,9 +22,8 @@ Jean Aristide Lambert (1914 - 1999) was a Germanist and French writer.
 
 
 For full examples see:
-http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_mult_Journal_Jean_Lambert.html
-
-http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_en_V_N_Golitsyn_s_diary.html
+- http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_mult_Journal_Jean_Lambert.html
+- http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_en_V_N_Golitsyn_s_diary.html
 
 
 
