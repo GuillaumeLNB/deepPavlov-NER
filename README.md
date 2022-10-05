@@ -1,23 +1,50 @@
 # deepPavlov-NER
-Python deepPavlov for NER (easy to get the entities spans and viz...)
+Python deepPavlov wrapper for NER.
+Able to get Named Entities using BERT language models in 100+ languages as well as 17 different types of named entities (CARDINAL, DATE, EVENT, FAC, GPE, LANGUAGE, LAW, LOC, MONEY, NORP, ORDINAL, ORG, PERSON, PRODUCT, QUANTITY, TIME, WORK_OF_ART)
+
+# Examples
+
+## English examples
+Dummy test on _Harry Potter 1_
+![Image](./img-examples/ex-en-1.png "DeepPavlov on English -1")
+...
+![Image](./img-examples/ex-en-2.png "DeepPavlov on English -2")
 
 
-Run the scripts in a virtual environment
+## French examples
+Dummy test on _Journal de Jean Lambert_\
+Jean Aristide Lambert (1914 - 1999) was a Germanist and French writer.
 
-### deepPavlov's installation
 
-See http://docs.deeppavlov.ai/en/master/intro/installation.html for deepPavlov's intallation
-(don't forget to upgrade pip in the virtual environment!)
+![Image](./img-examples/ex-fr-1.png "DeepPavlov on French -1")
+...
+![Image](./img-examples/ex-fr-2.png "DeepPavlov on French -2")
 
-### Install deepPavlov's models
-`python -m deeppavlov install ner_ontonotes_bert_torch`
-`python -m deeppavlov install squad_bert`
-`python install.py`
 
-### Install requirements
-`python -m pip install -r requirements.txt`
-download spacy model:
-`python -m spacy download xx_ent_wiki_sm`
+For full examples see:
+http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_mult_Journal_Jean_Lambert.html
+
+http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_en_V_N_Golitsyn_s_diary.html
+
+
+
+
+
+# Installation
+```
+pyenv global 3.7.7  # works only in 3.6/7
+for mod in $(grep -v bert-dp requirements-allgo.txt); do
+echo ___________________________________________________;
+echo $mod;
+pip install $mod;
+done
+
+python -m deeppavlov install squad_bert
+python -m deeppavlov install ner_ontonotes_bert
+python -m deeppavlov install ner_ontonotes_bert_mult
+python install.py
+python -m spacy download xx_ent_wiki_sm
+```
 
 # Demo
 ```
@@ -54,9 +81,7 @@ for entity in entities:
 # ...
 
 with Serializer(text, entities) as s:
-    s.to_tsv("entities.tsv")
-    s.to_html("entities.html")
-    s.to_json("entities.json")
-
-
+    s.to_tsv("entities.tsv")   # export the entities in TSV
+    s.to_html("entities.html") # export the entities in html
+    s.to_json("entities.json") # export the entities in json format
 ```
