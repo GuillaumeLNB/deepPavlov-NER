@@ -4,6 +4,8 @@ err
 *.json
 *.tsv
 *.html
+text-test.py
+
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
