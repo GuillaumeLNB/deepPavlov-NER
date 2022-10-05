@@ -109,7 +109,10 @@ class NETagger:
         if self.language == "en":
             # training the model with ner_ontonotes_bert
             logging.info(f"loading the model with 'ner_ontonotes_bert'")
+            # obsolete
             self.ner_model = build_model(configs.ner.ner_ontonotes_bert)
+            # self.ner_model = build_model(configs.ner.ner_ontonotes_bert_torch)
+
         # elif self.language == "ru":
         # the ner_rus_bert model is
         # not working on my pc as the model is too heavy
@@ -120,7 +123,9 @@ class NETagger:
         else:
             #  training the model with ner_ontonotes_bert_mult
             logging.info(f"loading the model with 'ner_ontonotes_bert_mult'")
+            # obsolete
             self.ner_model = build_model(configs.ner.ner_ontonotes_bert_mult)
+            # self.ner_model = build_model(configs.ner.ner_ontonotes_bert_torch)
         logging.info("done loading the model")
 
     def new_text(self, text: str, language: str = None):
