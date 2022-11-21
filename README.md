@@ -21,7 +21,7 @@ Jean Aristide Lambert (1914 - 1999) was a Germanist and French writer.
 ![Image](./img-examples/ex-fr-2.png "DeepPavlov on French -2")
 
 
-For full examples see:
+Full examples:
 - http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_mult_Journal_Jean_Lambert.html
 - http://people.irisa.fr/Guillaume.Le_Noe-Bienvenu/results/deepPavlov_ner_ontonotes_bert_en_V_N_Golitsyn_s_diary.html
 
@@ -32,10 +32,13 @@ For full examples see:
 # Installation
 ```
 pyenv global 3.7.7  # works only in 3.6/7
-for mod in $(grep -v bert-dp requirements-allgo.txt); do
-echo ___________________________________________________;
-echo $mod;
-pip install $mod;
+python -m venv env
+source env/bin/activate
+for mod in $(grep -v bert-dp requirements-allgo.txt);
+do
+    echo ___________________________________________________;
+    echo $mod;
+    pip install $mod;
 done
 
 python -m deeppavlov install squad_bert

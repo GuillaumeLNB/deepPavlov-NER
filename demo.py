@@ -15,19 +15,19 @@ Le personnage, Alonso Quichano, est à l'origine de l'archétype du Don Quichott
 
 """
 
-text = """
-Harry and Meghan were cheered by the crowd as they embarked on their first royal engagement since they left the UK for a new life in the US two years ago.
+# text = """
+# Harry and Meghan were cheered by the crowd as they embarked on their first royal engagement since they left the UK for a new life in the US two years ago.
 
-The Prince of Wales has also arrived and is set to represent his mother after the 96-year-old monarch pulled out of the high-profile occasion at St Paul’s Cathedral in London.
+# The Prince of Wales has also arrived and is set to represent his mother after the 96-year-old monarch pulled out of the high-profile occasion at St Paul’s Cathedral in London.
 
-She suffered “discomfort” following a busy first day of festivities on Thursday, including a double balcony appearance and a beacon lighting.
+# She suffered “discomfort” following a busy first day of festivities on Thursday, including a double balcony appearance and a beacon lighting.
 
-The Queen, 96 and facing ongoing mobility difficulties, will be watching the ceremony on television on Friday as she rests at Windsor Castle.
+# The Queen, 96 and facing ongoing mobility difficulties, will be watching the ceremony on television on Friday as she rests at Windsor Castle.
 
-Tributes will be paid to the Queen’s “70 years of faithful and dedicated service” as 2,000 people fill the historic church.
+# Tributes will be paid to the Queen’s “70 years of faithful and dedicated service” as 2,000 people fill the historic church.
 
-Public service is the theme of the event, with 400 people who are recipients of honours, including NHS and key workers who were recognised for their work during the pandemic, invited.
-"""
+# Public service is the theme of the event, with 400 people who are recipients of honours, including NHS and key workers who were recognised for their work during the pandemic, invited.
+# """
 
 
 ner = NETagger(text)
