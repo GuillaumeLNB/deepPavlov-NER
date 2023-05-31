@@ -353,9 +353,9 @@ class NETagger:
                 match_length = len(match[0])
                 ent["end"] -= match_length
                 ent["text"] = ent["text"][: match.start()]
-        assert (
-            self.text[ent["start"] : ent["end"]] == ent["text"]
-        ), f"error when updating an annotation starting or ending with spaces {ent}"
+            assert (
+                self.text[ent["start"] : ent["end"]] == ent["text"]
+            ), f"error when updating an annotation starting or ending with spaces {ent}"
         return entities
 
 
